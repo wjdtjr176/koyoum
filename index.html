@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="crossorigin="anonymous"></script>
+    <script src="./assets/js/common.js" defer></script>
+    <script src="./assets/js/main.js" defer></script>
+</head>
+<body>
+    <header id="header">
+        <h1 class="logo">
+            <a href="">
+                <img src="./assets/images/logo.png" alt="KOYOUM">
+            </a>
+        </h1>
+        <nav class="nav-area">
+            <button class="btn-menu">
+                <span class="blind">메뉴</span>
+            </button>
+        </nav>
+        <div class="util-area">
+            <a href="" >
+                <i class="ri-instagram-line"></i>
+                <span class="blind">인스타그램</span>
+            </a>
+            <a href="" >
+                <i class="ri-youtube-line"></i>
+                <span class="blind">유튜브</span>
+            </a>
+        </div>
+    </header>
+
+    <nav class="pop-menu">
+            <ul class="pop-list">
+                <li class="pop-item">
+                    <div class="inner">
+                        <a href="" class="title">BRAND</a>
+                        <ul class="sub">
+                            <li><a href="">브랜드 스토리</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="pop-item">
+                    <div class="inner">
+                        <a href="" class="title">PRODUCT</a>
+                        <ul class="sub">
+                            <li><a href="">크림</a></li>
+                            <li><a href="">시카크림</a></li>
+                            <li><a href="">로션</a></li>
+                            <li><a href="">미스트</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="pop-item">
+                    <div class="inner">
+                        <a href="" class="title">COMMUNITY</a>
+                        <ul class="sub">
+                            <li><a href="">NOTICE</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">문의</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="pop-item">
+                    <div class="inner">
+                        <a href="" class="title">EVENT</a>
+                        <ul class="sub">
+                            <li><a href="">진행중 이벤트</a></li>
+                            <li><a href="">종료된 이벤트</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="pop-item">
+                    <div class="inner">
+                        <a href="" class="title">About us</a>
+                        <ul class="sub">
+                            <li><a href="">About us</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        <button class="btn-close"><span class="blind">닫기</span></button>
+    </nav>
+
+
+
+    <main id="container" >
+        <section class="sc-visual">
+            <h2 class="blind">메인비주얼</h2>
+            <div class="swiper">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">                       
+                        <img src="./assets/images/visual2.jpg" alt class="bg">
+                        <div class="text-area">
+                            <img src="./assets/images/visual1-text.png" class="txt" alt="새로움으로 피어나다 고요움으로 태어나다" class="title-1">
+                            <p class="desc">High Moisture Care</p>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="./assets/images/visual1.jpg" alt class="bg">
+                        <div class="text-area-2">
+                            <strong class="title">누보피엘 고보습케어 프로그램</strong>
+                            <p class="sub-title">the first barand of koyoum </p>
+                            <div class="thumb">
+                                <img src="./assets/images/slide-img.png" alt>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="./assets/images/visual3.jpg" alt>
+                    </li>
+                </ul>
+                <div class="btn-control">
+                    <button class="btn-auto">
+                        <div class="progress">
+                            <svg viewBox="0 0 48 48" style="--progress: 0.7356;">
+                                <circle cx="24" cy="24" r="20"></circle>
+                            </svg>
+                        </div>
+                        <span class="blind">자동재생 정지</span>
+                    </button>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sc-intro ">
+            <h2 class="blind">소개</h2>
+            <div class="txt">
+                <img src="./assets/images/intro-txt.png" alt="KOYOUM">
+            </div>
+            <div class="inner1">
+                <div class="content">
+                    <div class="thumb-move">
+                        <img src="./assets/images/intro2.png" alt>
+                    </div>
+                    <div class="thumb-text">
+                        <img src="./assets/images/intro1.png" alt>
+                    </div>
+                </div>
+                <div class="text-area">
+                    <div class="thumb">
+                        <img src="./assets/images/intro-text.png" alt="소중한 가족을 위해">
+                    </div>
+                    <p class="desc">
+                        좋은 제품이라도 사람마다 효과와 보습력의 차이가 있습니다.<br>
+                        고요움은 소중한 가족이 안심하게 바를 수 있는<br class="m3">
+                        순한 제품을 만들고 싶은 마음으로부터 시작되었습니다.
+                    </p>
+                    <a href="" class="link-more">자세히보기</a>
+                </div>
+            </div>
+        </section>
+        <section class="sc-recommend">
+            <h2 class="blind">추천제품</h2>
+            <div class="swiper">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <div class="img-area">
+                            <img src="./assets/images/recommend1.jpg" alt>
+                        </div>
+                        <div class="text-area">
+                            <h3 class="title">MIST</h3>
+                            <strong class="sub-title">누보피엘 카밍 미스트</strong>
+                            <p class="en-title">NUOVOPIEL CALMING MIST</p>
+                            <p class="desc">미스트가 필요한 순간,  어디서나 촉촉하게 관리하고 싶다면</p>
+                            <a href="" class="link-more">
+                                <div class="txt">
+                                    <span>view</span>
+                                    <span class="em">more</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="img-area">
+                            <img src="./assets/images/recommend1.jpg" alt>
+                        </div>
+                        <div class="text-area">
+                            <h3 class="title">MIST</h3>
+                            <strong class="sub-title">누보피엘 카밍 미스트</strong>
+                            <p class="en-title">NUOVOPIEL CALMING MIST</p>
+                            <p class="desc">미스트가 필요한 순간,  어디서나 촉촉하게 관리하고 싶다면</p>
+                            <a href="" class="link-more">
+                                <div class="txt">
+                                    <span>view</span>
+                                    <span class="em">more</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="img-area">
+                            <img src="./assets/images/recommend1.jpg" alt>
+                        </div>
+                        <div class="text-area">
+                            <h3 class="title">MIST</h3>
+                            <strong class="sub-title">누보피엘 카밍 미스트</strong>
+                            <p class="en-title">NUOVOPIEL CALMING MIST</p>
+                            <p class="desc">미스트가 필요한 순간,  어디서나 촉촉하게 관리하고 싶다면</p>
+                            <a href="" class="link-more">
+                                <div class="txt">
+                                    <span>view</span>
+                                    <span class="em" >more</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="img-area">
+                            <img src="./assets/images/recommend1.jpg" alt>
+                        </div>
+                        <div class="text-area">
+                            <h3 class="title">MIST</h3>
+                            <strong class="sub-title">누보피엘 카밍 미스트</strong>
+                            <p class="en-title">NUOVOPIEL CALMING MIST</p>
+                            <p class="desc">미스트가 필요한 순간,  어디서나 촉촉하게 관리하고 싶다면</p>
+                            <a href="" class="link-more">
+                                <div class="txt">
+                                    <span>view</span>
+                                    <span class="em">more</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="btn-control">
+                    <div class="swiper-btn prev"></div>
+                    <div class="swiper-btn next"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sc-ad">
+            <h2 class="blind">스킨케어 솔류션</h2>
+            <div class="thumb">
+                <div class="move">
+                    <img src="./assets/images/sc-ad.jpg" alt>
+                </div>
+            </div>
+            <div class="text-area">
+                <img src="./assets/images/ad-text.png" alt="고요움은" class="title">
+                <p class="desc">정신없는 일상 속에도 피부가<br class="m"> 고요해지도록<br class="pc"> 합리적이고 현명한 <em class="col">스킨케어<br class="m"> 솔루션</em>을 제공합니다.</p>
+            </div>
+        </section>
+        
+        <div class="sc-info">
+            <h2 class="blind">고객상담및이벤트</h2>
+            <div class="inner1">
+                <section class="group-contact">
+                    <h2 class="blind">고객상담</h2>
+                    <div class="text-area">
+                        <img src="./assets/images/contact-title.png" alt="고객상담" class="title">
+                        <p class="tel">063.247.8004</p>
+                        <p class="desc">월요일~금요일(토요일, 공휴일 휴무)</p>
+                    </div>
+                </section>
+                <section class="group-event">
+                    <h2 class="blind">이벤트</h2>
+                    <div class="text-area">
+                        <img src="./assets/images/event-title.png" alt="이벤트" class="title">
+                        <img src="./assets/images/event-desc.png" alt="누보피엘 신규런칭 신규회원 이벤트" class="desc">
+                        <a href="" class="btn-more">view-more</a>
+                    </div>
+                </section>
+            </div>
+            <section class="group-notice">
+                <h2 class="blind">뉴스</h2>
+                <strong class="title">NOTICE</strong>
+                <a href="" class="desc dot">'고요움' 지디웹(GDWEB DESIGN AWARDS)에 웹 부분 WINNER PRIZE 수상</a>
+                <img src="./assets/images/notice-title.png" alt="nuovopiel">
+                <p class="desc">고보습 집중케어 4종 제품정보를 확인하세요</p>
+                <button class="btn-down">카탈로그 다운로드</button>
+            </section>
+        </div>
+
+        <div class="scroll">
+            SCROLL
+        </div>
+
+        <button class="btn-fix">
+            카카오채널 상담하기
+        </button>
+
+    </main>
+
+
+    <footer id="footer">
+        <h2 class="blind">고요움푸터</h2>
+        <div class="inner">
+            <div class="group-contact">
+                <a href="" class="link-contact">ABOUT US</a>
+                <a href="" class="link-sns insta"><span class="blind">인스타그램</span></a>
+                <a href="" class="link-sns youtube"><span class="blind">유튜브</span></a>
+            </div>
+            <address class="group-address">
+                <div class="inner2">
+                    <div class="img-area">
+                        <img src="./assets/images/ft-logo.png" alt="SKINCARE & BEAUTY K O Y O U M">
+                    </div>
+                    <address class="text-area">
+                        <strong class="title">고요움</strong>
+                        <address class="addr">전북특별자치도 전주시 덕진구 견원로 302, 2층</address>
+                        <p class="tel">T. 063.247.8004 F. 063.256.8005</p>
+                    </address>
+                </div>
+                <small class="copy">Copyright ⓐ 2024 KOYOUM All Rights Reserved</small>
+            </address>
+        </div>
+    </footer>
+</body>
+</html>

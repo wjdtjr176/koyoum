@@ -1,0 +1,357 @@
+@import './font.css';
+@import './reset.css';
+@import './common.css';
+
+
+
+
+#header{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    top: 50px;
+    min-width: 1903px;
+}
+#header.on{
+    position: fixed;
+    z-index: 1000;
+}
+#header .logo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#header .logo a{
+    position: relative;
+    display: block;
+    z-index: 11;
+    width: 192px;
+    height: 39px;
+    filter: blur(0);
+    transition: 1s;
+}
+#header .logo a:hover{
+    animation: blur 1.5s linear;
+}
+@keyframes blur {
+    0%{filter:blur(0);}
+    50%{filter:blur(3px);}
+    100%{filter:blur(0);}
+}
+
+
+
+#header .nav-area{
+    position: absolute;
+    left: 80px;
+}
+#header .nav-area .btn-menu{
+    position: relative;
+    z-index: 11;
+    width: 54px;
+    height: 54px;
+}
+#header.on .nav-area .btn-menu{
+    transition: transform 0.2s;
+}
+#header.on .nav-area .btn-menu:hover{
+    transform: rotate(180deg);
+}
+#header.on .nav-area .btn-menu::before{
+    transform: translate(-50%, -50%) rotate(-135deg);
+}
+#header.on .nav-area .btn-menu::after{
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+#header .nav-area .btn-menu:hover::before{
+    transform: translate(-50%, -50%) rotate(-135deg);
+}
+#header .nav-area .btn-menu:hover::after{
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+#header .nav-area .btn-menu::before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -400%);
+    width: 100%;
+    height: 1.8px;
+    background-color: #fff;
+    content: "";
+    transition: 0.3s;
+}
+#header .nav-area .btn-menu::after{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 400%);
+    width: 100%;
+    height: 1.8px;
+    background-color: #fff;
+    content: "";
+    transition: 0.3s;
+}
+
+
+#header .util-area{
+    display: flex;
+    position: absolute;
+    top: -3px;
+    gap: 40px;
+    right: 80px;
+}
+#header .util-area a{
+    position: relative;
+    width: 22px;
+    height: 22px;
+    z-index: 11;
+    color: #fff;
+}
+#header .util-area a:hover::before{
+    display: block;
+    width: 9px;
+    height: 9px;
+}
+#header .util-area a::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+    background-color: #FF4D00;
+    content: "";
+    transition: all 0.3s;
+}
+#header .util-area a{
+    font-size: 22px;
+}
+
+
+
+
+
+
+.pop-menu{
+    height: 0;
+    min-width: 1903px;
+}
+.pop-menu .pop-list.on{
+    opacity: 1;
+    visibility: visible;
+    height: 100vh;
+    min-width: 1903px;
+}
+.pop-menu .pop-list{
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    background-color: #003D35;
+    font-size: 20px;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+}
+.pop-menu .pop-item{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+.pop-menu .pop-item:nth-child(1){
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.pop-menu .pop-item .inner{
+    display: flex;
+    align-items: center;
+    height: 120px;
+    max-width: 1360px;
+    width: 100%;
+}
+.pop-menu .pop-item::before{
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    content: "";
+}
+.pop-menu .pop-item::after{
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid #fff;
+    transform: scaleX(0);
+    transition: 0.3s;
+}
+.pop-menu .pop-item:hover::after{
+    transform: scaleX(1);
+}
+.pop-menu .title{   
+    font-family: "Noto Serif KR";
+    font-size: 40px;
+    width: 470px;
+}
+.pop-menu a{
+    font-size: 20px;
+}
+.pop-menu .sub{
+    display: flex;
+    flex: 1;
+    gap: 30px;
+}
+.pop-menu .sub a{
+    transition: all 0.3s;
+    position: relative;
+}
+.pop-menu .sub a::after{
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 100%;
+    background-color: #FF4D00;
+    content: "";
+    transform: translate(calc(100% + 5px), -100%);
+    transition: all 0.3s;
+}
+.pop-menu .sub a:hover{
+    font-weight: 800;
+    color: #FF4D00;
+}
+.pop-menu .sub a:hover::after{
+    width: 8px;
+    height: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer{
+    background-color: #312211;
+    min-width: 1903px;
+}
+#footer .inner{
+    max-width: 1360px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 75px 0;
+}
+#footer .group-contact{
+    height: 36px;
+    margin: 95px 0 25px;
+    font-size: 20px;
+    color: #ffffff66;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: end;
+}
+#footer .group-contact .link-contact{
+    position: relative;
+}
+#footer .group-contact .link-contact::after{
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    content: "";
+    opacity: 0.4;
+    transition: all 0.3s;
+}
+#footer .group-contact .link-contact:hover::after{
+    width: 100%;
+}
+#footer .group-contact .link-sns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: all 0.3s;
+    color: #312211;
+    font-family: remixicon;
+}
+#footer .group-contact .insta::before{
+    content: "\ee66";
+}
+#footer .group-contact .youtube::before{
+    content: "\f2d5";
+}
+#footer .group-contact .link-sns:hover{
+    background-color: rgba(255, 255, 255, 1);
+} 
+#footer .group-address{
+    height: 240px;
+    display: flex;
+    gap: 30px;
+}
+#footer .group-address .inner2{
+    display: flex;
+}
+#footer .group-address img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#footer .group-address .text-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-left: 30px;
+}
+#footer .group-address .title{
+    font-size: 20px;
+    color: #614d34;
+    margin-bottom: 10px;
+}
+#footer .group-address .addr{
+    font-size: 18px;
+    color: #ffffff4d;
+}
+#footer .group-address .tel{
+    font-size: 18px;
+    color: #ffffff4d;
+}
+#footer .group-address .copy{
+    font-size: 18px;
+    color: #ffffff4d;
+    display: flex;
+    align-items: end;
+    margin-left: auto;
+}
+
+
+
+
+
+
+
+
+

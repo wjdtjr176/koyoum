@@ -1,0 +1,87 @@
+
+
+
+
+.blind{
+    position: absolute;   
+    width: 1px;height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+}
+
+
+
+
+.scroll{
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    height: 100px;
+    font-family: "Noto Serif KR";
+    font-size:22px ;
+    font-weight: 100;
+    color: #fff;
+}
+.scroll.hide{
+    display: none;
+}
+.scroll::before{
+    height: 25px;
+    margin: 0;
+    animation: scroll 2s infinite alternate;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 64px;
+    width: 1px;
+    background-color: #fff;
+    content: "";
+}
+.scroll::after{
+    height: 65px;
+    opacity: 0.2;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 64px;
+    width: 1px;
+    background-color: #fff;
+    content: "";
+}
+
+
+
+.btn-fix{
+    position: fixed;
+    right: 80px;
+    bottom: 75px;
+    z-index: 10;
+    width: 230px;
+    height: 50px;
+    border-radius: 60px;
+    background-color: #FAE100;
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-fix::before{
+    display: inline-block;
+    position: relative;
+    top: 0;
+    width: 30px;
+    height: 32px;
+    margin-right: 10px;
+    background: url(../images/btn-fix.png) no-repeat center center;
+    background-size: 100% auto;
+    content: "";
+    transition: 0.3s;
+}
+.btn-fix:hover::before{
+    top: -15px;
+}
