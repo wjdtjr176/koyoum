@@ -224,6 +224,7 @@
 .sc-intro .txt{
     position: absolute;
     top: 19%;
+    overflow: hidden;
 }
 .sc-intro .txt img{
     transform: translateX(100%);
