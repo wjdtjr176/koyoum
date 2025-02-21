@@ -70,9 +70,9 @@ ScrollTrigger.create({
 })
 
 $('.sc-intro').mousemove(function(e){
-    x = e.clientX;
+    const x = e.clientX;
 
-    result = -(x - $('.sc-intro').innerWidth())/20;
+    const result = -(x - $('.sc-intro').innerWidth())/20;
 
 
 
@@ -100,10 +100,10 @@ ScrollTrigger.create({
 })
 
 $('.sc-ad').mousemove(function(e){
-    x = e.clientX;
-    y = e.clientY;
+    const x = e.clientX;
+    const y = e.clientY;
 
-    result = (x - $('.sc-ad').innerWidth())/50;
+    const result = (x - $('.sc-ad').innerWidth())/50;
 
     gsap.to('.sc-ad .thumb .move',{
         x:result
@@ -142,8 +142,4 @@ const recommendSlide = new Swiper('.sc-recommend .swiper',{
         nextEl:".next",
     },
     speed:1000,
-    //  속도 늦춰준다
-    // autoplay:{
-    //     delay:5000,
-    // }
 });
